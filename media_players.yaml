@@ -1,0 +1,5 @@
+- platform: yamaha
+  name: orpheus
+  host: 172.16.16.22
+- platform: sonos
+  hosts: 172.16.16.23

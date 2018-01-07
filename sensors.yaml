@@ -1,0 +1,19 @@
+- platform: yr
+  monitored_conditions:
+    - temperature
+    - symbol
+- platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: memory_use_percent
+    - type: swap_use_percent
+    - type: processor_use
+    - type: last_boot
+- platform: fritzbox_netmonitor
+  host: 192.168.10.1

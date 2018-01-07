@@ -1,0 +1,4 @@
+entities:
+  - name: Router
+    url: http://fritz.box
+    icon: mdi:router-wireless

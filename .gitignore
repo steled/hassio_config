@@ -5,3 +5,5 @@
 !README.md
 secrets.yaml
 known_devices.yaml
+device_tracker.yaml
+zones.yaml

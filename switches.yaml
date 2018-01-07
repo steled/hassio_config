@@ -1,0 +1,21 @@
+- platform: template
+  switches:
+    room_switch:
+      friendly_name: Room Switch
+      value_template: "{{ is_state('media_player.orpheus', 'playing') }}"
+      turn_on:
+        - service: media_player.turn_off
+          entity_id: media_player.mobil
+        - service: media_player.turn_on
+          entity_id: media_player.orpheus
+      turn_off:
+        - service: media_player.turn_off
+          entity_id: media_player.orpheus
+        - service: media_player.turn_on
+          entity_id: media_player.mobil
+#- platform: command_line
+#  switches:
+#    yamaha_power:
+#      friendly_name: Yamaha Switch
+#      command_on: curl 'http://ripper-lounge/YamahaRemoteControl/ctrl' --data-binary '<?xml version="1.0" encoding="utf-8"?><YAMAHA_AV cmd="PUT"><System><Power_Control><Power>On</Power></Power_Control></System></YAMAHA_AV>'
+#      command_off: curl 'http://ripper-lounge/YamahaRemoteControl/ctrl' --data-binary '<?xml version="1.0" encoding="utf-8"?><YAMAHA_AV cmd="PUT"><System><Power_Control><Power>Standby</Power></Power_Control></System></YAMAHA_AV>'

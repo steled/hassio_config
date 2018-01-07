@@ -58,8 +58,7 @@ map:
 sun:
 
 # Weather prediction
-sensor:
-  - platform: yr
+sensor: !include sensors.yaml
 
 # Text to speech
 tts:
@@ -68,3 +67,12 @@ tts:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+switch: !include switches.yaml
+device_tracker: !include device_tracker.yaml
+zone: !include zones.yaml
+weblink: !include weblinks.yaml
+panel_iframe: !include panel_iframes.yaml
+media_player: !include media_players.yaml
+alexa:
+  intents: !include alexa.yaml
+scene: !include scenes.yaml

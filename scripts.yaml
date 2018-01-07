@@ -1,0 +1,16 @@
+#script:
+#  room_switch_script:
+#    alias: Room Switch
+#    sequence:
+#    - condition: and
+#      conditions:
+#        - condition: state
+#          entity_id: media_player.ripperlounge
+#          state: playing
+#        - condition: state
+#          entity_id: media_player.mobil
+#          state: paused
+#    - service: media_player.turn_off
+#      entity_id: media_player.ripperlounge
+#    - service: media_player.turn_on
+#      entity_id: media_player.mobil

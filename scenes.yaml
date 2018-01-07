@@ -1,0 +1,4 @@
+- name: mobil_an
+  entities:
+    media_player.mobil:
+      state: on

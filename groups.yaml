@@ -1,0 +1,24 @@
+weather:
+  name: Weather
+  view: false
+  entities:
+  - sensor.yr_symbol
+  - sensor.yr_temperature
+  - sun.sun
+network:
+  name: Network
+  view: false
+  entities:
+  - sensor.fritz_netmonitor
+  - sensor.speedtest_download
+  - sensor.speedtest_ping
+  - sensor.speedtest_upload
+host:
+  name: Host
+  view: false
+  entities:
+  - sensor.cpu_use
+  - sensor.disk_use_
+  - sensor.last_boot
+  - sensor.ram_use
+  - sensor.swap_use
