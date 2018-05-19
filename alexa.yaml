@@ -1,1 +1,6 @@
 alexa:
+  entity_config:
+    scene.mobil_an:
+      name: "SONOS Küche"
+      description: "SONOS Player Küche"
+      display_categories: SPEAKER
