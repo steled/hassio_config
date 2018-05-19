@@ -73,5 +73,5 @@ zone: !include zones.yaml
 weblink: !include weblinks.yaml
 panel_iframe: !include panel_iframes.yaml
 media_player: !include media_players.yaml
-cloud: !include alexa.yaml
+cloud:
 scene: !include scenes.yaml
