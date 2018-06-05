@@ -18,7 +18,7 @@ host:
   view: false
   entities:
   - sensor.processor_use
-  - sensor.sensor.disk_use_percent_
+  - sensor.disk_use_percent_
   - sensor.last_boot
   - sensor.memory_use_percent
   - sensor.swap_use_percent
