@@ -1,6 +1,6 @@
 alexa:
   entity_config:
-    media_player.küche:
+    media_player.kueche:
       name: "SONOS Küche"
       description: "SONOS Player Küche"
       display_categories: SPEAKER

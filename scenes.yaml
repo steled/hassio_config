@@ -1,4 +1,4 @@
-- name: küche_an
+- name: kueche_an
   entities:
-    media_player.küche:
+    media_player.kueche:
       state: on
