@@ -72,6 +72,6 @@ device_tracker: !include device_tracker.yaml
 zone: !include zones.yaml
 weblink: !include weblinks.yaml
 panel_iframe: !include panel_iframes.yaml
-media_player: !include media_players.yaml
+media_player: !include media_player.yaml
 cloud: !include alexa.yaml
 scene: !include scenes.yaml
