@@ -1,9 +1,9 @@
-- action:
-  - service: media_player.turn_off
+- id: '1540039157597'
   alias: Music Off
-  condition: []
-  id: '1515342064534'
   trigger:
   - entity_id: device_tracker.bqaquariusx
     platform: state
     to: not_home
+  condition: []
+  action:
+  - service: media_player.turn_off

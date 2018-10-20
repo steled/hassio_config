@@ -2,8 +2,8 @@ weather:
   name: Weather
   view: false
   entities:
-  - sensor.yr_symbol
-  - sensor.yr_temperature
+  - sensor.weather_symbol
+  - sensor.weather_temperature
   - sun.sun
 network:
   name: Network
@@ -14,7 +14,7 @@ network:
   - sensor.speedtest_ping
   - sensor.speedtest_upload
 host:
-  name: Host
+  name: hassio
   view: false
   entities:
   - sensor.processor_use
