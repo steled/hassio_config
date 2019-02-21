@@ -3,11 +3,6 @@
   monitored_conditions:
     - temperature
     - symbol
-- speedtestdotnet:
-  monitored_conditions:
-    - ping
-    - download
-    - upload
 - platform: systemmonitor
   resources:
     - type: disk_use_percent
