@@ -3,7 +3,7 @@
   monitored_conditions:
     - temperature
     - symbol
-- platform: speedtestdotnet
+- speedtestdotnet:
   monitored_conditions:
     - ping
     - download
