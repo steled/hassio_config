@@ -71,3 +71,10 @@ switch: !include switches.yaml
 #weblink: !include weblinks.yaml
 #panel_iframe: !include panel_iframes.yaml
 #scene: !include scenes.yaml
+speedtestdotnet:
+  scan_interval:
+    minutes: 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
