@@ -71,6 +71,7 @@ switch: !include switches.yaml
 #weblink: !include weblinks.yaml
 #panel_iframe: !include panel_iframes.yaml
 #scene: !include scenes.yaml
+system_health:
 speedtestdotnet:
   scan_interval:
     minutes: 30
