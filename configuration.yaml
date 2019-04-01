@@ -79,5 +79,3 @@ speedtestdotnet:
     - ping
     - download
     - upload
-#lovelace:
-#  mode: yaml
