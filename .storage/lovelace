@@ -62,49 +62,58 @@
                                     "type": "media-control"
                                 },
                                 {
-                                    "entities": [
-                                        {
-                                            "name": "104.6 RTL",
-                                            "service": "media_player.play_media",
-                                            "service_data": {
-                                                "entity_id": "media_player.orpheus",
-                                                "media_content_id": "Lesezeichen>My__Favorites>104.6 RTL Berlin",
-                                                "media_content_type": "NET RADIO"
+                                    "card": {
+                                        "entities": [
+                                            {
+                                                "name": "104.6 RTL",
+                                                "service": "media_player.play_media",
+                                                "service_data": {
+                                                    "entity_id": "media_player.orpheus",
+                                                    "media_content_id": "Lesezeichen>My__Favorites>104.6 RTL Berlin",
+                                                    "media_content_type": "NET RADIO"
+                                                },
+                                                "type": "call-service"
                                             },
-                                            "type": "call-service"
-                                        },
-                                        {
-                                            "name": "94,3 rs2",
-                                            "service": "media_player.play_media",
-                                            "service_data": {
-                                                "entity_id": "media_player.orpheus",
-                                                "media_content_id": "Lesezeichen>My__Favorites>94,3 rs2",
-                                                "media_content_type": "NET RADIO"
+                                            {
+                                                "name": "94,3 rs2",
+                                                "service": "media_player.play_media",
+                                                "service_data": {
+                                                    "entity_id": "media_player.orpheus",
+                                                    "media_content_id": "Lesezeichen>My__Favorites>94,3 rs2",
+                                                    "media_content_type": "NET RADIO"
+                                                },
+                                                "type": "call-service"
                                             },
-                                            "type": "call-service"
-                                        },
-                                        {
-                                            "name": "BB Radio",
-                                            "service": "media_player.play_media",
-                                            "service_data": {
-                                                "entity_id": "media_player.orpheus",
-                                                "media_content_id": "Lesezeichen>My__Favorites>BB Radio 107.5 FM Potsdam",
-                                                "media_content_type": "NET RADIO"
+                                            {
+                                                "name": "BB Radio",
+                                                "service": "media_player.play_media",
+                                                "service_data": {
+                                                    "entity_id": "media_player.orpheus",
+                                                    "media_content_id": "Lesezeichen>My__Favorites>BB Radio 107.5 FM Potsdam",
+                                                    "media_content_type": "NET RADIO"
+                                                },
+                                                "type": "call-service"
                                             },
-                                            "type": "call-service"
-                                        },
+                                            {
+                                                "name": "Fritz",
+                                                "service": "media_player.play_media",
+                                                "service_data": {
+                                                    "entity_id": "media_player.orpheus",
+                                                    "media_content_id": "Lesezeichen>My__Favorites>Fritz vom rbb 102.6 FM",
+                                                    "media_content_type": "NET RADIO"
+                                                },
+                                                "type": "call-service"
+                                            }
+                                        ],
+                                        "type": "entities"
+                                    },
+                                    "conditions": [
                                         {
-                                            "name": "Fritz",
-                                            "service": "media_player.play_media",
-                                            "service_data": {
-                                                "entity_id": "media_player.orpheus",
-                                                "media_content_id": "Lesezeichen>My__Favorites>Fritz vom rbb 102.6 FM",
-                                                "media_content_type": "NET RADIO"
-                                            },
-                                            "type": "call-service"
+                                            "entity": "media_player.orpheus",
+                                            "state": "playing"
                                         }
                                     ],
-                                    "type": "entities"
+                                    "type": "conditional"
                                 }
                             ],
                             "type": "vertical-stack"
