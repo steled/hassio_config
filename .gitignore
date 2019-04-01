@@ -3,6 +3,7 @@
 !scenes
 !.gitignore
 !README.md
+!.storage/lovelace
 secrets.yaml
 known_devices.yaml
 device_tracker.yaml
