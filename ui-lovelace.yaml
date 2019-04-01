@@ -1,0 +1,110 @@
+title: Home
+views:
+  - path: default_view
+    title: Home
+    badges:
+      - device_tracker.hassio
+      - device_tracker.tantalos
+      - device_tracker.orpheus
+      - device_tracker.sonoszp
+      - device_tracker.alexa
+      - device_tracker.bqaquariusx
+      - device_tracker.cerberus
+      - device_tracker.ripperbridge
+      - device_tracker.rippermobile
+      - device_tracker.rippermobile_2
+      - device_tracker.ripperhome
+    cards:
+      - type: entities
+        entities:
+          - sensor.weather_symbol
+          - sensor.weather_temperature
+          - sun.sun
+        title: Weather
+        show_header_toggle: false
+      - type: entities
+        entities:
+          - sensor.fritz_netmonitor
+          - sensor.speedtest_download
+          - sensor.speedtest_ping
+          - sensor.speedtest_upload
+        title: Network
+        show_header_toggle: false
+      - type: entities
+        entities:
+          - sensor.processor_use
+          - sensor.disk_use_percent
+          - sensor.last_boot
+          - sensor.memory_use_percent
+          - sensor.swap_use_percent
+        title: hassio
+        show_header_toggle: false
+      - type: media-control
+        entity: media_player.orpheus
+      - type: media-control
+        entity: media_player.kuche
+      - type: entities
+        entities:
+          - automation.music_off
+        title: Automatisierung
+        show_header_toggle: false
+      - type: entities
+        entities:
+          - script.1553799567394
+          - script.1553793882113
+          - script.1553797946975
+          - script.1553799276286
+        title: Skript
+        show_header_toggle: false
+      - type: entities
+        entities:
+          - switch.room_switch
+        title: Schalter
+        show_header_toggle: true
+      - type: entities
+        title: orpheus
+        show_header_toggle: false
+        entities:
+          - entity: media_player.orpheus
+          - type: section
+          - type: call-service
+            icon: 'mdi:power'
+            name: orpheus - on
+            service: media_player.turn_on
+            service_data:
+              entity_id: media_player.orpheus
+          - type: call-service
+            icon: 'mdi:power'
+            name: orpheus - off
+            service: media_player.turn_off
+            service_data:
+              entity_id: media_player.orpheus
+          - type: section
+          - type: call-service
+            name: 104.6 RTL
+            service: media_player.play_media
+            service_data:
+              entity_id: media_player.orpheus
+              media_content_id: Lesezeichen>My__Favorites>104.6 RTL Berlin
+              media_content_type: NET RADIO
+          - type: call-service
+            name: '94,3 rs2'
+            service: media_player.play_media
+            service_data:
+              entity_id: media_player.orpheus
+              media_content_id: 'Lesezeichen>My__Favorites>94,3 rs2'
+              media_content_type: NET RADIO
+          - type: call-service
+            name: BB Radio
+            service: media_player.play_media
+            service_data:
+              entity_id: media_player.orpheus
+              media_content_id: Lesezeichen>My__Favorites>BB Radio 107.5 FM Potsdam
+              media_content_type: NET RADIO
+          - type: call-service
+            name: Fritz
+            service: media_player.play_media
+            service_data:
+              entity_id: media_player.orpheus
+              media_content_id: Lesezeichen>My__Favorites>Fritz vom rbb 102.6 FM
+              media_content_type: NET RADIO
