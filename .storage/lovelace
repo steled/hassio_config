@@ -103,6 +103,16 @@
                                                     "media_content_type": "NET RADIO"
                                                 },
                                                 "type": "call-service"
+                                            },
+                                            {
+                                                "name": "KISS",
+                                                "service": "media_player.play_media",
+                                                "service_data": {
+                                                    "entity_id": "media_player.orpheus",
+                                                    "media_content_id": "Lesezeichen>My__Favorites>98.8 KISS FM",
+                                                    "media_content_type": "NET RADIO"
+                                                },
+                                                "type": "call-service"
                                             }
                                         ],
                                         "type": "entities"
