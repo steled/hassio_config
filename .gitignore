@@ -8,3 +8,4 @@ secrets.yaml
 known_devices.yaml
 device_tracker.yaml
 zones.yaml
+media_player.yaml
