@@ -79,3 +79,9 @@ speedtestdotnet:
     - ping
     - download
     - upload
+
+# Logging
+#logger:
+#  default: debug
+#  logs:
+#    homeassistant.components.device_tracker: debug
