@@ -81,7 +81,7 @@ speedtestdotnet:
     - upload
 
 # Logging
-#logger:
-#  default: debug
-#  logs:
-#    homeassistant.components.device_tracker: debug
+logger:
+  default: info
+  logs:
+    homeassistant.components.device_tracker: debug
