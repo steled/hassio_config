@@ -8,5 +8,6 @@
   action:
   - entity_id: all
     service: media_player.turn_off
-  - data: {}
+  - data:
+      entity_id: media_player.kuche
     service: media_player.media_pause
