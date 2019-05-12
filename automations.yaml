@@ -2,12 +2,14 @@
   alias: Music Off
   trigger:
   - entity_id: device_tracker.bqaquariusx
+    from: home
     platform: state
     to: not_home
   condition: []
   action:
-  - entity_id: all
-    service: media_player.turn_off
   - data:
       entity_id: media_player.kuche
     service: media_player.media_pause
+  - data:
+      entity_id: all
+    service: media_player.turn_off
