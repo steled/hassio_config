@@ -1,13 +1,11 @@
 weather:
   name: Weather
-  view: false
   entities:
   - sensor.weather_symbol
   - sensor.weather_temperature
   - sun.sun
 network:
   name: Network
-  view: false
   entities:
   - sensor.fritz_netmonitor
   - sensor.speedtest_download
@@ -15,7 +13,6 @@ network:
   - sensor.speedtest_upload
 host:
   name: hassio
-  view: false
   entities:
   - sensor.processor_use
   - sensor.disk_use_percent
