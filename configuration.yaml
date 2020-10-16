@@ -60,6 +60,9 @@ tts:
 # Cloud
 cloud:
 
+# Mobile App
+mobile_app:
+
 sensor: !include sensors.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
