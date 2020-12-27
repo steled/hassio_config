@@ -68,7 +68,7 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 #zone: !include zones.yaml
 device_tracker: !include device_tracker.yaml
-media_player: !include media_player.yaml
+#media_player: !include media_player.yaml
 switch: !include switches.yaml
 #weblink: !include weblinks.yaml
 #panel_iframe: !include panel_iframes.yaml
