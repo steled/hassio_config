@@ -61,13 +61,13 @@ switch: !include switches.yaml
 #panel_iframe: !include panel_iframes.yaml
 #scene: !include scenes.yaml
 system_health:
-speedtestdotnet:
-  scan_interval:
-    minutes: 30
-  monitored_conditions:
-    - ping
-    - download
-    - upload
+#speedtestdotnet:
+#  scan_interval:
+#    minutes: 30
+#  monitored_conditions:
+#    - ping
+#    - download
+#    - upload
 
 # Logging
 #logger:
