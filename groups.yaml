@@ -5,7 +5,7 @@ weather:
 network:
   name: Network
   entities:
-  - sensor.fritz_netmonitor
+  - sensor.fritz_box_7590_ui_external_ip
   - sensor.speedtest_download
   - sensor.speedtest_ping
   - sensor.speedtest_upload
