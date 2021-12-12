@@ -77,3 +77,7 @@ system_health:
 #  default: debug
 #  logs:
 #    homeassistant.components.device_tracker: debug
+
+recorder:
+  auto_purge: true
+  purge_keep:days: 14
