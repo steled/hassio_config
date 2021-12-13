@@ -80,4 +80,4 @@ system_health:
 
 recorder:
   auto_purge: true
-  purge_keep:days: 14
+  purge_keep_days: 14
