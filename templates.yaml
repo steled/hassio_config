@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    bytes_received:
+      friendly_name: "FRITZ!Box 7590 (UI) Link Download"
+      unit_of_measurement: "Mbit/s"
+      value_template: "{{ (states('sensor.fritz_box_7590_ui_max_connection_download_throughput') | float / 1024) | round(2) }}"
+    bytes_sent:
+      friendly_name: "FRITZ!Box 7590 (UI) Link Upload"
+      unit_of_measurement: "Mbit/s"
+      value_template: "{{ (states('sensor.fritz_box_7590_ui_max_connection_upload_throughput') | int / 1024) | round(2) }}"
