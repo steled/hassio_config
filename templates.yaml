@@ -1,5 +1,4 @@
-- platform: template
-  sensors:
+- sensors:
     bytes_received:
       friendly_name: "FRITZ!Box 7590 (UI) Link Download"
       unit_of_measurement: "Mbit/s"
