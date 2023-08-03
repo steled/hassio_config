@@ -1,0 +1,96 @@
+jam_fm:
+  alias: JAM FM
+  sequence:
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutZone_InputFunction%2FFAVORITES&cmd1=aspMainZone_WebUpdateStatus%2F&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  - delay: '7'
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutNetAudioCommand%2FCurDown&cmd1=osThreadSleep%2F50&cmd2=PutNetAudioCommand%2FCurDown&cmd3=osThreadSleep%2F50&cmd4=PutNetAudioCommand%2FCurRight&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  mode: single
+fritz:
+  alias: Fritz
+  sequence:
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutZone_InputFunction%2FFAVORITES&cmd1=aspMainZone_WebUpdateStatus%2F&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  - delay: '7'
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutNetAudioCommand%2FCurRight&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  mode: single
+1046_rtl:
+  alias: 104.6 RTL
+  sequence:
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutZone_InputFunction%2FFAVORITES&cmd1=aspMainZone_WebUpdateStatus%2F&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  - delay: '7'
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutNetAudioCommand%2FCurDown&cmd1=osThreadSleep%2F50&cmd2=PutNetAudioCommand%2FCurDown&cmd3=osThreadSleep%2F50&cmd4=PutNetAudioCommand%2FCurDown&cmd5=osThreadSleep%2F50&cmd6=PutNetAudioCommand%2FCurDown&cmd7=osThreadSleep%2F50&cmd8=PutNetAudioCommand%2FCurRight&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  mode: single
+bb_radio:
+  alias: BB Radio
+  sequence:
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutZone_InputFunction%2FFAVORITES&cmd1=aspMainZone_WebUpdateStatus%2F&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  - delay: '7'
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutNetAudioCommand%2FCurDown&cmd1=osThreadSleep%2F50&cmd2=PutNetAudioCommand%2FCurDown&cmd3=osThreadSleep%2F50&cmd4=PutNetAudioCommand%2FCurDown&cmd5=osThreadSleep%2F50&cmd6=PutNetAudioCommand%2FCurRight&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  mode: single
+backup:
+  alias: backup
+  sequence:
+  - service: denonavr.get_command
+    data:
+      command: /goform/formiPhoneAppDirect.xml?SIFAVORITES
+    entity_id: media_player.orpheus
+  - delay: '1'
+  - service: denonavr.get_command
+    data:
+      command: /goform/formiPhoneAppDirect.xml?NS91
+    entity_id: media_player.orpheus
+  - delay: '1'
+  - service: denonavr.get_command
+    data:
+      command: /goform/formiPhoneAppDirect.xml?NS94
+    entity_id: media_player.orpheus
+  mode: single
+988_kiss_fm:
+  alias: 98.8 Kiss FM
+  sequence:
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutZone_InputFunction%2FFAVORITES&cmd1=aspMainZone_WebUpdateStatus%2F&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  - delay: '7'
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutNetAudioCommand%2FCurDown&cmd1=osThreadSleep%2F50&cmd2=PutNetAudioCommand%2FCurRight&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  mode: single
+943_rs2:
+  alias: 94.3 rs2
+  sequence:
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutZone_InputFunction%2FFAVORITES&cmd1=aspMainZone_WebUpdateStatus%2F&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  - delay: '7'
+  - service: denonavr.get_command
+    data:
+      command: /MainZone/index.put.asp?cmd0=PutNetAudioCommand%2FCurDown&cmd1=osThreadSleep%2F50&cmd2=PutNetAudioCommand%2FCurDown&cmd3=osThreadSleep%2F50&cmd4=PutNetAudioCommand%2FCurDown&cmd5=osThreadSleep%2F50&cmd6=PutNetAudioCommand%2FCurDown&cmd7=osThreadSleep%2F50&cmd8=PutNetAudioCommand%2FCurDown&cmd9=osThreadSleep%2F50&cmd10=PutNetAudioCommand%2FCurRight&ZoneName=MAIN+ZONE
+    entity_id: media_player.orpheus
+  mode: single

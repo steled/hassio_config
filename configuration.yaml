@@ -1,15 +1,4 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
-  name: Home
-  # Location required to calculate the time the sun rises and sets
-  latitude: !secret latitude
-  longitude: !secret longitude
-  # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 55
-  # metric for Metric, imperial for Imperial
-  unit_system: metric
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  time_zone: Europe/Berlin
   # Customization file
   customize: !include customize.yaml
 
@@ -24,16 +13,9 @@ config:
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 http:
-  base_url: !secret base_url
-
-# Checks for available updates
-# Note: This component will send some information about your system to
-# the developers to assist with development of Home Assistant.
-# For more information, please see:
-# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
-  # include_used_components: true
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.16.4.26
 
 # Discover some devices automatically
 #discovery:
@@ -60,28 +42,34 @@ tts:
 # Cloud
 cloud:
 
+# Mobile App
+mobile_app:
+
 sensor: !include sensors.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
-zone: !include zones.yaml
 device_tracker: !include device_tracker.yaml
-media_player: !include media_player.yaml
 switch: !include switches.yaml
+template: !include templates.yaml
 #weblink: !include weblinks.yaml
 #panel_iframe: !include panel_iframes.yaml
 #scene: !include scenes.yaml
 system_health:
-speedtestdotnet:
-  scan_interval:
-    minutes: 30
-  monitored_conditions:
-    - ping
-    - download
-    - upload
+#speedtestdotnet:
+#  scan_interval:
+#    minutes: 30
+#  monitored_conditions:
+#    - ping
+#    - download
+#    - upload
 
 # Logging
 #logger:
 #  default: debug
 #  logs:
 #    homeassistant.components.device_tracker: debug
+
+recorder:
+  auto_purge: true
+  purge_keep_days: 14
