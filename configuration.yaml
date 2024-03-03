@@ -45,7 +45,7 @@ cloud:
 # Mobile App
 mobile_app:
 
-sensor: !include sensors.yaml
+# sensor: !include sensors.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
