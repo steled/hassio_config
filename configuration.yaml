@@ -17,7 +17,6 @@ http:
   trusted_proxies:
     - 172.16.4.26
 
-
 # Discover some devices automatically
 #discovery:
 
