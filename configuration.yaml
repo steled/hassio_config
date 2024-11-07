@@ -15,8 +15,8 @@ config:
 http:
   use_x_forwarded_for: true
   trusted_proxies:
-    - 172.16.4.26
     - 172.16.4.27
+    # - 172.16.4.26
 
 # Discover some devices automatically
 #discovery:
