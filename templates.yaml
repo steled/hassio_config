@@ -1,11 +1,11 @@
-- sensors:
+- sensor:
     bytes_received:
       unique_id: "1928347262394"
-      friendly_name: "FRITZ!Box 7590 (UI) Link Download"
+      name: "FRITZ!Box 7590 (UI) Link Download"
       unit_of_measurement: "Mbit/s"
       value_template: "{{ (states('sensor.fritz_box_7590_ui_max_connection_download_throughput') | float / 1000) | round(2) }}"
     bytes_sent:
       unique_id: "837201208476"
-      friendly_name: "FRITZ!Box 7590 (UI) Link Upload"
+      name: "FRITZ!Box 7590 (UI) Link Upload"
       unit_of_measurement: "Mbit/s"
       value_template: "{{ (states('sensor.fritz_box_7590_ui_max_connection_upload_throughput') | float / 1000) | round(2) }}"
